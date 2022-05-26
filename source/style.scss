@@ -3,11 +3,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+//fonts
+%Nunito400 {
+    font-family: Nunito;
+    font-weight: 400;
+}
+%OpenSans700 {
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+%OpenSans600 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+%OpenSans400 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+%OpenSans300 {
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+%Montserrat400 {
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+
 .wrapper {
     display: flex;
     flex-direction: column;
     position: relative;
 }
+
 .header {
     width: 100%;
     position: absolute;
@@ -22,10 +50,6 @@
             @media (max-width: 767px) {
                 display: block;
             }
-
-            // @media (min-width: 767px) {
-            //     display: none;
-            // }
         }
 
         &__row {
@@ -36,12 +60,11 @@
         }
 
 		&__logo {
-            font-family: Nunito;
             font-size: 31.2px;
             line-height: 77px;
-            font-weight: 400;
             text-transform: uppercase;
             color: #6d6e70;
+            @extend %Nunito400;
 		}
 
         &__logo span {
@@ -79,12 +102,6 @@
 		&__menu li {
             display: inline-block;
             margin: 0 0 0 26px;
-            // @media (max-width: 767px) {
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: center;
-            //     margin: 0;
-            // }
 
             @media (max-width: 810px) {
                 margin: 0 0 0 10px;
@@ -94,12 +111,8 @@
                 display: block;
                 background: #484848;
                 margin: 0;
-                text-align: center;
-                
-            }
-        
-
-            
+                text-align: center;   
+            }     
 		}
 
         &__menu li a:hover {
@@ -112,11 +125,10 @@
 
 		&__item a {
             opacity: 0.67;
-            font-family: 'Open Sans';
             font-size: 13.2px;
             line-height: 77px;
-            font-weight: 600;
             color: #666666;
+            @extend %OpenSans600;
 		}
 
         &__login {
@@ -128,19 +140,19 @@
             background-color: #add136;
             padding: 13px 30px 13px 30px;
             opacity: 0.81;
-            font-family: 'Open Sans';
             font-size: 13.2px;
             line-height: 77px;
-            font-weight: 600;
             color: #ffffff;
             border: 0px transparent;
             border-radius: 25px;
+            @extend %OpenSans600;
 		}
 
         &__login a:hover {
             background: #556e00;
         }
 }
+
 .container {
     max-width: 980px;
     margin: 0 auto;
@@ -163,26 +175,24 @@
     }
 
     &__title {
-        font-family: 'Open Sans';
         font-size: 49.2px;
         line-height: 77px;
-        font-weight: 600;
         color: #ffffff;
         text-align: center;
         margin: 0 0 60px 0;
+        @extend %OpenSans600;
     }
 
     &__button a {
         background-color: #99c50a;
-        font-family: 'Open Sans';
         font-size: 19.2px;
         line-height: 77px;
-        font-weight: 600;
         color: #ffffff;
         padding: 20px 40px 20px 40px;
         width: 100%;
         border: 0px transparent;
         border-radius: 10px;
+        @extend %OpenSans600;
     }
 
     &__button a:hover {
@@ -205,24 +215,22 @@
     }
 
     &__title {
-        font-family: 'Open Sans';
         font-size: 31.2px;
         line-height: 50px;
-        font-weight: 600;
         text-transform: uppercase;
         color: #515151;
         text-align: center;
         margin: 0 0 70px 0;
+        @extend %OpenSans600;
     }
 
     &__text {
         opacity: 0.7;
-        font-family: 'Open Sans';
         font-size: 19.2px;
         line-height: 1.2;
-        font-weight: 400;
         color: #515151;
         text-align: center;
+        @extend %OpenSans400;
     }
 }
 
@@ -270,24 +278,22 @@
         background-color: #5f5f5f;
         border: 1px solid #5f5f5f;
         border-radius: 50%;
-        font-family: 'Open Sans';
         font-size: 20.2px;
         line-height: 1.2;
-        font-weight: 600;
         color: #ffffff;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 30px 0 0;
+        @extend %OpenSans600;
 
     }
 
     &__tab-text {
-        font-family: 'Open Sans';
         font-size: 33.2px;
         line-height: 1.2;
-        font-weight: 300;
         color: #656565;
+        @extend %OpenSans300;
     }
 
     &__info {
@@ -315,12 +321,11 @@
     }
 
     &__title {
-        font-family: 'Open Sans';
         font-size: 25.2px;
         line-height: 1.2;
-        font-weight: 400;
         color: #add136;
         margin: 0 0 30px 0;
+        @extend %OpenSans400;
 
         @media (max-width: 900px) {
             text-align: center;
@@ -329,11 +334,10 @@
 
     &__text {
         opacity: 0.67;
-        font-family: 'Open Sans';
         font-size: 17.2px;
         line-height: 1.2;
-        font-weight: 400;
         color: #606060;
+        @extend %OpenSans400;
 
         @media (max-width: 900px) {
             text-align: center;
@@ -402,12 +406,11 @@ hr {
     }
 
     &__title {
-        font-family: Montserrat;
         font-size: 23.2px;
         line-height: 1.2;
-        font-weight: 400;
         color: #515151;
         margin: 0 0 35px 0;
+        @extend %Montserrat400;
 
         @media (max-width: 560px) {
             margin: 0 0 15px 0;
@@ -415,12 +418,11 @@ hr {
     }
 
     &__text {
-        font-family: 'Open Sans';
         font-size: 17.2px;
         line-height: 1.2;
-        font-weight: 400;
         color: #515151;
         margin: 0 0 30px 0;
+        @extend %OpenSans400;
 
         @media (max-width: 560px) {
             margin: 0 0 10px 0;
@@ -435,11 +437,10 @@ hr {
         justify-content: center;
         border: 1px solid transparent;
         border-radius: 10px;
-        font-family: 'Open Sans';
         font-size: 14.9px;
         line-height: 1.2;
-        font-weight: 600;
         color: #ffffff;
+        @extend %OpenSans600;
     }
 
     &__link-blue {
@@ -484,23 +485,23 @@ hr {
     }
 
     &__title {
-        font-family: 'Open Sans';
         font-size: 29.2px;
         line-height: 1.2;
-        font-weight: 600;
         color: #515151;
         margin: 0 0 25px 0;
+        @extend %OpenSans600;
+
         @media (max-width: 767px) {
             text-align: center;
         } 
     }
 
     &__text {
-        font-family: 'Open Sans';
         font-size: 17.2px;
         line-height: 1.2;
-        font-weight: 400;
         color: #8f8f8f;
+        @extend %OpenSans400;
+
         @media (max-width: 767px) {
             text-align: center;
             margin: 0 0 20px 0;
@@ -529,13 +530,12 @@ hr {
 
     &__button a {
         // opacity: 0.7;
-        font-family: 'Open Sans';
         font-size: 14.9px;
         line-height: 1.2;
-        font-weight: 600;
         color: #515151;
         width: 100%;
         text-align: center;
+        @extend %OpenSans600;
     }
 }
 
@@ -591,11 +591,10 @@ hr {
     &__new span {
         display: block;
         transform: rotate(-45deg);
-        font-family: Montserrat;
         font-size: 14.6px;
         line-height: 1.2;
-        font-weight: 400;
         color: #ffffff;
+        @extend %Montserrat400;
     }
 
     &__image {
@@ -617,13 +616,12 @@ hr {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Open Sans';
         font-size: 16.6px;
         line-height: 1.2;
-        font-weight: 400;
         color: #ffffff;
         border: 0px transparent;
         border-radius: 10px;
+        @extend %OpenSans400;
     }
 
     &__item span {
@@ -641,6 +639,7 @@ hr {
         font-weight: 700;
         color: #484848;
         margin: 0 0 17px 0;
+        @extend %OpenSans700;
     }
 
     &__text {
@@ -651,6 +650,7 @@ hr {
         font-weight: 400;
         color: #484848;
         margin: 0 0 20px 0;
+        @extend %OpenSans400;
     }
 
     &__bar {
@@ -674,6 +674,7 @@ hr {
         line-height: 1.2;
         font-weight: 600;
         color: #8d8d8d;
+        @extend %OpenSans600;
     }
 
     &__days {
@@ -682,6 +683,7 @@ hr {
         line-height: 1.2;
         font-weight: 600;
         color: #8d8d8d;
+        @extend %OpenSans600;
     }
 
     &__hr {
@@ -716,6 +718,7 @@ hr {
         line-height: 1.2;
         font-weight: 400;
         color: #484848;
+        @extend %OpenSans400;
     }
 }
 
@@ -747,23 +750,21 @@ hr {
     padding: 80px 0 60px 0;
     
     &__title {
-        font-family: 'Open Sans';
         font-size: 39.2px;
         line-height: 1.2;
-        font-weight: 600;
         color: #9ec02d;
         text-align: center;
         margin: 0 0 42px 0;
+        @extend %OpenSans600;
     }
 
     &__text {
-        font-family: 'Open Sans';
         font-size: 19.2px;
         line-height: 1.2;
-        font-weight: 400;
         color: #949494;
         text-align: center;
         margin: 0 0 98px 0;
+        @extend %OpenSans400;
     }
 
     &__row {
@@ -817,22 +818,20 @@ hr {
     }
 
     &__comment-title {
-        font-family: 'Open Sans';
         font-size: 21.2px;
         line-height: 1.2;
-        font-weight: 600;
         color: #9ec02d;
         text-align: center;    
         margin: 0 0 22px 0;
+        @extend %OpenSans600;
     }
 
     &__comment-text {
-        font-family: 'Open Sans';
         font-size: 13.2px;
         line-height: 1.8;
-        font-weight: 400;
         color: #848484;
         text-align: center; 
+        @extend %OpenSans400;
     }
 
     &__user {
@@ -846,11 +845,10 @@ hr {
     }
 
     &__name {
-        font-family: Montserrat;
         font-size: 15.2px;
         line-height: 1.2;
-        font-weight: 400;
         color: #494949;
+        @extend %Montserrat400;
     }
 }
 
@@ -873,12 +871,11 @@ hr {
     }
 
     &__info {
-        font-family: 'Open Sans';
         font-size: 13.2px;
         line-height: 1.2;
-        font-weight: 400;
         color: #848484;
         text-align: center;
+        @extend %OpenSans400;
     }
 }
 
