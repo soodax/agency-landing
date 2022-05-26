@@ -96,6 +96,7 @@
         }
 
         &__menu-close li a {
+            transition: 0.3s;
             color: white;
         }
 
@@ -116,6 +117,7 @@
 		}
 
         &__menu li a:hover {
+            transition: 0.3s;
             color: black;
         }
 
@@ -136,6 +138,7 @@
         }
 
 		&__login a {
+            transition: 0.3s;
             width: 100%;
             background-color: #add136;
             padding: 13px 30px 13px 30px;
@@ -149,6 +152,7 @@
 		}
 
         &__login a:hover {
+            transition: 0.3s;
             background: #556e00;
         }
 }
@@ -184,6 +188,7 @@
     }
 
     &__button a {
+        transition: 0.3s;
         background-color: #99c50a;
         font-size: 19.2px;
         line-height: 77px;
@@ -196,6 +201,7 @@
     }
 
     &__button a:hover {
+        transition: 0.3s;
         background: #556e00;
     }
 }
@@ -444,10 +450,12 @@ hr {
     }
 
     &__link-blue {
+        transition: 0.3s;
         background-color: #26a6d1;
     }
 
     &__link-blue:hover {
+        transition: 0.3s;
         background: #015c7a;
     }
 
@@ -460,10 +468,12 @@ hr {
     }
 
     &__link-green {
+        transition: 0.3s;
         background-color: #add136;
     }
 
     &__link-green:hover {
+        transition: 0.3s;
         background: #556e00;
     }
 }
@@ -509,6 +519,7 @@ hr {
     }
 
     &__button {
+        transition: 0.3s;
         width: 183px;
         height: 52px;
         opacity: 0.41;
@@ -521,6 +532,7 @@ hr {
     }
 
     &__button:hover {
+        transition: 0.3s;
         background: black;
         
         a {
@@ -529,6 +541,7 @@ hr {
     }
 
     &__button a {
+        
         // opacity: 0.7;
         font-size: 14.9px;
         line-height: 1.2;

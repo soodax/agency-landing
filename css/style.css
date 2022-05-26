@@ -76,6 +76,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.header__logo {
+  font-family: Nunito;
+  font-weight: 400;
+}
+
+.cities__title {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.community__comment-title, .community__title, .cities__days, .cities__funded, .featured__button a, .featured__title, .portfolio__link, .projects__tab-icon, .presentation__title, .main__button a, .main__title, .header__login a, .header__item a {
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.footer__info, .community__comment-text, .community__text, .cities__link a, .cities__text, .cities__item, .featured__text, .portfolio__text, .projects__text, .projects__title, .presentation__text {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.projects__tab-text {
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.community__name, .cities__new span, .portfolio__title {
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,10 +146,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .header__logo {
-  font-family: Nunito;
   font-size: 31.2px;
   line-height: 77px;
-  font-weight: 400;
   text-transform: uppercase;
   color: #6d6e70;
 }
@@ -149,6 +177,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 5px 0 5px;
 }
 .header__menu-close li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: white;
 }
 .header__menu li {
@@ -169,6 +199,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .header__menu li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: black;
 }
 .header__menu li:first-child {
@@ -176,29 +208,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__item a {
   opacity: 0.67;
-  font-family: "Open Sans";
   font-size: 13.2px;
   line-height: 77px;
-  font-weight: 600;
   color: #666666;
 }
 .header__login {
   opacity: 0.81;
 }
 .header__login a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   width: 100%;
   background-color: #add136;
   padding: 13px 30px 13px 30px;
   opacity: 0.81;
-  font-family: "Open Sans";
   font-size: 13.2px;
   line-height: 77px;
-  font-weight: 600;
   color: #ffffff;
   border: 0px transparent;
   border-radius: 25px;
 }
 .header__login a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: #556e00;
 }
 
@@ -233,20 +265,18 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .main__title {
-  font-family: "Open Sans";
   font-size: 49.2px;
   line-height: 77px;
-  font-weight: 600;
   color: #ffffff;
   text-align: center;
   margin: 0 0 60px 0;
 }
 .main__button a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #99c50a;
-  font-family: "Open Sans";
   font-size: 19.2px;
   line-height: 77px;
-  font-weight: 600;
   color: #ffffff;
   padding: 20px 40px 20px 40px;
   width: 100%;
@@ -254,6 +284,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
 }
 .main__button a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: #556e00;
 }
 
@@ -274,10 +306,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 50px 0;
 }
 .presentation__title {
-  font-family: "Open Sans";
   font-size: 31.2px;
   line-height: 50px;
-  font-weight: 600;
   text-transform: uppercase;
   color: #515151;
   text-align: center;
@@ -285,10 +315,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .presentation__text {
   opacity: 0.7;
-  font-family: "Open Sans";
   font-size: 19.2px;
   line-height: 1.2;
-  font-weight: 400;
   color: #515151;
   text-align: center;
 }
@@ -355,10 +383,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #5f5f5f;
   border: 1px solid #5f5f5f;
   border-radius: 50%;
-  font-family: "Open Sans";
   font-size: 20.2px;
   line-height: 1.2;
-  font-weight: 600;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,10 +398,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 30px 0 0;
 }
 .projects__tab-text {
-  font-family: "Open Sans";
   font-size: 33.2px;
   line-height: 1.2;
-  font-weight: 300;
   color: #656565;
 }
 .projects__info {
@@ -416,10 +440,8 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
 }
 .projects__title {
-  font-family: "Open Sans";
   font-size: 25.2px;
   line-height: 1.2;
-  font-weight: 400;
   color: #add136;
   margin: 0 0 30px 0;
 }
@@ -430,10 +452,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .projects__text {
   opacity: 0.67;
-  font-family: "Open Sans";
   font-size: 17.2px;
   line-height: 1.2;
-  font-weight: 400;
   color: #606060;
 }
 @media (max-width: 900px) {
@@ -536,10 +556,8 @@ hr {
   }
 }
 .portfolio__title {
-  font-family: Montserrat;
   font-size: 23.2px;
   line-height: 1.2;
-  font-weight: 400;
   color: #515151;
   margin: 0 0 35px 0;
 }
@@ -549,10 +567,8 @@ hr {
   }
 }
 .portfolio__text {
-  font-family: "Open Sans";
   font-size: 17.2px;
   line-height: 1.2;
-  font-weight: 400;
   color: #515151;
   margin: 0 0 30px 0;
 }
@@ -575,16 +591,18 @@ hr {
           justify-content: center;
   border: 1px solid transparent;
   border-radius: 10px;
-  font-family: "Open Sans";
   font-size: 14.9px;
   line-height: 1.2;
-  font-weight: 600;
   color: #ffffff;
 }
 .portfolio__link-blue {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #26a6d1;
 }
 .portfolio__link-blue:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: #015c7a;
 }
 .portfolio__image-green {
@@ -596,9 +614,13 @@ hr {
   }
 }
 .portfolio__link-green {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #add136;
 }
 .portfolio__link-green:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: #556e00;
 }
 
@@ -625,10 +647,8 @@ hr {
   }
 }
 .featured__title {
-  font-family: "Open Sans";
   font-size: 29.2px;
   line-height: 1.2;
-  font-weight: 600;
   color: #515151;
   margin: 0 0 25px 0;
 }
@@ -638,10 +658,8 @@ hr {
   }
 }
 .featured__text {
-  font-family: "Open Sans";
   font-size: 17.2px;
   line-height: 1.2;
-  font-weight: 400;
   color: #8f8f8f;
 }
 @media (max-width: 767px) {
@@ -651,6 +669,8 @@ hr {
   }
 }
 .featured__button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   width: 183px;
   height: 52px;
   opacity: 0.41;
@@ -668,16 +688,16 @@ hr {
           justify-content: center;
 }
 .featured__button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: black;
 }
 .featured__button:hover a {
   color: white;
 }
 .featured__button a {
-  font-family: "Open Sans";
   font-size: 14.9px;
   line-height: 1.2;
-  font-weight: 600;
   color: #515151;
   width: 100%;
   text-align: center;
@@ -746,10 +766,8 @@ hr {
   display: block;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  font-family: Montserrat;
   font-size: 14.6px;
   line-height: 1.2;
-  font-weight: 400;
   color: #ffffff;
 }
 .cities__image {
@@ -775,10 +793,8 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Open Sans";
   font-size: 16.6px;
   line-height: 1.2;
-  font-weight: 400;
   color: #ffffff;
   border: 0px transparent;
   border-radius: 10px;
@@ -907,19 +923,15 @@ hr {
   padding: 80px 0 60px 0;
 }
 .community__title {
-  font-family: "Open Sans";
   font-size: 39.2px;
   line-height: 1.2;
-  font-weight: 600;
   color: #9ec02d;
   text-align: center;
   margin: 0 0 42px 0;
 }
 .community__text {
-  font-family: "Open Sans";
   font-size: 19.2px;
   line-height: 1.2;
-  font-weight: 400;
   color: #949494;
   text-align: center;
   margin: 0 0 98px 0;
@@ -990,19 +1002,15 @@ hr {
   left: 83px;
 }
 .community__comment-title {
-  font-family: "Open Sans";
   font-size: 21.2px;
   line-height: 1.2;
-  font-weight: 600;
   color: #9ec02d;
   text-align: center;
   margin: 0 0 22px 0;
 }
 .community__comment-text {
-  font-family: "Open Sans";
   font-size: 13.2px;
   line-height: 1.8;
-  font-weight: 400;
   color: #848484;
   text-align: center;
 }
@@ -1019,10 +1027,8 @@ hr {
   margin: 0 18px 0 0;
 }
 .community__name {
-  font-family: Montserrat;
   font-size: 15.2px;
   line-height: 1.2;
-  font-weight: 400;
   color: #494949;
 }
 
@@ -1040,10 +1046,8 @@ hr {
   width: 100%;
 }
 .footer__info {
-  font-family: "Open Sans";
   font-size: 13.2px;
   line-height: 1.2;
-  font-weight: 400;
   color: #848484;
   text-align: center;
 }
